@@ -50,21 +50,21 @@ class SignUp : AppCompatActivity() {
         val firstName=binding.etFirstname.text.toString()
         val lastName=binding.etLastName.text.toString()
         val phoneNumber=binding.etPhonenumber.text.toString()
-        val email = binding.etEmail.text.toString()
+        val email = binding.etPassword2.text.toString()
         val password = binding.etPassword.text.toString()
         val confirm=binding.etConfirmpassword.text.toString()
         var error = false
 
         if (firstName.isBlank()) {
             error = true
-            binding.tilFirstName.error = "First name is required"
+            binding.tilUsername.error = "First name is required"
         }
         if (lastName.isBlank()) {
-            binding.tilFirstName.error = "First name is required"
+            binding.tilLastName.error = "First name is required"
             error = true
         }
         if (email.isBlank()) {
-            binding.tilEmail.error = "Email is required"
+            binding.tilPassword2.error = "Email is required"
             error = true
         }
         if (password.isBlank()) {
@@ -91,9 +91,9 @@ class SignUp : AppCompatActivity() {
     }
 
     fun clearErrors() {
-        binding.tilFirstName.error = null
+        binding.tilUsername.error = null
         binding.tilLastName
-        binding.tilEmail.error = null
+        binding.tilPassword2.error = null
         binding.tilPassword.error = null
         binding.tilPhonenumber.error = null
         binding.tilConfirmpassword.error=null

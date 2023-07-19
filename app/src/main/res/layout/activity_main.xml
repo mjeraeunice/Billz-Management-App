@@ -28,7 +28,7 @@
         android:layout_marginTop="84dp"
         android:layout_marginEnd="195dp"
         android:fontFamily="sans-serif-condensed"
-        android:text="TextView"
+        android:text="  Billz App"
         android:textColor="#A51919"
         android:textColorHighlight="#FFFFFF"
         android:textColorHint="#A33434"
@@ -37,8 +37,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.331"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:text="      Billz App " />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btnGetStarted"
@@ -60,12 +59,11 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="88dp"
         android:fontFamily="sans-serif-condensed"
-        android:text="TextView"
+        android:text=" Get your bills managed with Billz"
         android:textColor="#811D1D"
         android:textSize="20sp"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivSplash"
-        tools:text="Get your bills managed with Billz" />
+        app:layout_constraintTop_toBottomOf="@+id/ivSplash" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4657B6"
+    tools:context=".HomePage">
+
+    <TextView
+        android:id="@+id/tvBack"
+        android:layout_width="101dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="208dp"
+        android:text="Welcome back User"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="51dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="320dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/round_person_24" />
+
+    <TextView
+        android:id="@+id/tvBillings"
+        android:layout_width="324dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="60dp"
+        android:background="#DDD4D4"
+        android:text="            Bills"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBack" />
+
+    <ImageView
+        android:id="@+id/ivMenu"
+        android:layout_width="45dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="148dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_menu_24" />
+
+    <TextView
+        android:id="@+id/tvUpcoming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="321dp"
+        android:background="#F1E8E8"
+        android:text="Upcoming Bills"
+        android:textColor="#B51C1C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBillings" />
+
+    <TextView
+        android:id="@+id/tvOverdue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="36dp"
+        android:background="#E6DBDB"
+        android:text="Overdue"
+        app:layout_constraintEnd_toStartOf="@+id/tvPaid"
+        app:layout_constraintStart_toEndOf="@+id/tvUpcoming"
+        app:layout_constraintTop_toBottomOf="@+id/tvBillings" />
+
+    <TextView
+        android:id="@+id/tvPaid"
+        android:layout_width="55dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:background="#EFE6E6"
+        android:text="Paid"
+        app:layout_constraintEnd_toStartOf="@+id/tvRecurring"
+        app:layout_constraintTop_toBottomOf="@+id/tvBillings" />
+
+    <TextView
+        android:id="@+id/tvRecurring"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="40dp"
+        android:background="#ECE4E4"
+        android:text="Recurring"
+        app:layout_constraintStart_toEndOf="@+id/tvPaid"
+        app:layout_constraintTop_toBottomOf="@+id/tvBillings" />
+
+    <TextView
+        android:id="@+id/tvMonthly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="332dp"
+        android:text=" Weekly"
+        android:textColor="#C83B3B"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUpcoming" />
+
+    <TextView
+        android:id="@+id/tvWeekly"
+        android:layout_width="49dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="99dp"
+        android:text="Monthly"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvYearly"
+        app:layout_constraintTop_toBottomOf="@+id/tvOverdue" />
+
+    <TextView
+        android:id="@+id/tvYearly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="74dp"
+        android:text="Yearly"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRecurring" />
+
+    <ImageView
+        android:id="@+id/ivCart"
+        android:layout_width="55dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="328dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMonthly"
+        app:srcCompat="@drawable/baseline_shopping_cart_24" />
+
+    <TextView
+        android:id="@+id/tvShopping"
+        android:layout_width="93dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="61dp"
+        android:text=" Shopping"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvAmount1"
+        app:layout_constraintTop_toBottomOf="@+id/tvWeekly" />
+
+    <TextView
+        android:id="@+id/tvAmount1"
+        android:layout_width="87dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="36dp"
+        android:text=" 30,000 Ksh"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvYearly" />
+
+    <ImageView
+        android:id="@+id/ivGrad"
+        android:layout_width="49dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvFees"
+        app:layout_constraintTop_toBottomOf="@+id/ivCart"
+        app:srcCompat="@drawable/baseline_school_24" />
+
+    <TextView
+        android:id="@+id/tvFees"
+        android:layout_width="118dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="40dp"
+        android:text=" School Fees"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvAmount2"
+        app:layout_constraintTop_toBottomOf="@+id/tvShopping" />
+
+    <TextView
+        android:id="@+id/tvAmount2"
+        android:layout_width="104dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="20dp"
+        android:text="40,000 Ksh"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAmount1" />
+
+    <ImageView
+        android:id="@+id/ivHouse"
+        android:layout_width="47dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvRent"
+        app:layout_constraintTop_toBottomOf="@+id/ivGrad"
+        app:srcCompat="@drawable/home" />
+
+    <TextView
+        android:id="@+id/tvRent"
+        android:layout_width="111dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="488dp"
+        android:layout_marginEnd="172dp"
+        android:text="House Rent"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAmount3"
+        android:layout_width="103dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="33dp"
+        android:text="35,000 Ksh"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAmount2" />
+
+    <TextView
+        android:id="@+id/tvInsurance"
+        android:layout_width="89dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="64dp"
+        android:text="Insurance"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvAmount4"
+        app:layout_constraintTop_toBottomOf="@+id/tvRent" />
+
+    <TextView
+        android:id="@+id/tvAmount4"
+        android:layout_width="82dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="39dp"
+        android:text="10,000 Ksh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAmount3" />
+
+    <TextView
+        android:id="@+id/tvSignOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="65dp"
+        android:text="Sign OUt"
+        android:textColor="#390F0F"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAmount4" />
+
+    <ImageView
+        android:id="@+id/ivInsurance"
+        android:layout_width="54dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvInsurance"
+        app:layout_constraintTop_toBottomOf="@+id/ivHouse"
+        app:srcCompat="@drawable/insurance" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
