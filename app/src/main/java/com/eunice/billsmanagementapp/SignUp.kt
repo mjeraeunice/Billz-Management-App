@@ -24,10 +24,10 @@ class SignUp : AppCompatActivity() {
     }
     override fun onResume() {
         super.onResume()
-        binding.tvLogin.setOnClickListener {
-            val intent = Intent(this, Login::class.java)
-            startActivity(intent)
-        }
+//        binding.tvLogin.setOnClickListener {
+//            val intent = Intent(this, Login::class.java)
+//            startActivity(intent)
+//        }
         binding.btnSignUp.setOnClickListener{
             clearErrors()
             validateSignUp()
@@ -74,6 +74,10 @@ class SignUp : AppCompatActivity() {
         if (phoneNumber.isBlank()) {
             binding.tilPhonenumber.error = "Your phone number is required"
             error = true
+        }
+        if(confirm.isBlank()){
+            error=true
+            binding.tilConfirmpassword.error="Confirm your password first"
         }
         if(!error){
             val registerRequest=RegisterRequest(

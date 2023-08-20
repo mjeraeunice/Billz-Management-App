@@ -2,5 +2,5 @@ package com.eunice.billsmanagementapp.model
 
 data class RegisterResponse(
     var message :String,
-    var user: User,
+    var user:String,
 )
